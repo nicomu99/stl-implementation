@@ -57,8 +57,9 @@ def compareApprox(A, p_r, p_c, l_k, u_k):
     approx = np.dot(l_k, u_k)
     print("approx:")
     print(approx)
-    PA = p_A = A[pr, :]
-    PA = p_A[:, pc]
+    PA = p_A = A[p_r, :]
+    PA = p_A[:, p_c]
     print("PA:")
     print(PA)
     return np.allclose(approx, PA)
+

@@ -44,7 +44,6 @@ def lu_crtp(a, k):
     # Compute L_21
     inv_a_dash_11 = np.linalg.inv(a_dash_11)
     l_21 = np.dot(a_dash_21, inv_a_dash_11)
-    print(l_21)
     
     # Stack the block matrices
     i = np.identity(k)

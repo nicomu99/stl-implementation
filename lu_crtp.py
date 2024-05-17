@@ -25,7 +25,7 @@ def lu_crtp(a, k):
 
 
     # Compute the thin QR factorization of the selected columns
-    q_k, r_k = lu_crtp_4_new(a, p_c, k)
+    q_k, r_k = lu_crtp_4(a, p_c, k)
 
     # Select k rows by using QR with tournament pivoting on Q^T_k
     _, _, p_r = qr(q_k.T, pivoting=True)

@@ -1,0 +1,7 @@
+max_columns_for_apriori=30
+matrix.shape=(800, 400)
+matrix_min=0
+matrix_max=1
+item_threshold=0.5
+density=0.001071875
+k_max=210

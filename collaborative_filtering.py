@@ -18,7 +18,7 @@ def nmf_pca_wrapper(data, n_components=3):
     std_scaler = StandardScaler()
     data_scaled = std_scaler.fit_transform(data)
 
-    pca = PCA(n_components=3) 
+    pca = PCA(n_components=n_components) 
     data_reduced = pca.fit_transform(data_scaled)
 
     # NMF needs the data to be larger than 0, so we scale the data up
